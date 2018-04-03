@@ -1,5 +1,7 @@
 # Data Structures and Algorithms
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/floyernick/Data-Structures-and-Algorithms)](https://goreportcard.com/report/github.com/floyernick/Data-Structures-and-Algorithms) [![Build Status](https://travis-ci.org/floyernick/Data-Structures-and-Algorithms.svg?branch=master)](https://travis-ci.org/floyernick/Data-Structures-and-Algorithms) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/floyernick/Data-Structures-and-Algorithms/blob/master/LICENSE)
+
 Clean and simple implementation in Go
 
 ## Implementation
@@ -13,6 +15,7 @@ There are several data structures and algorithms implemented in this project. Th
 - Stack
 - Queue
 - Binary Tree
+- Hash Table
 
 ##### Searching algorithms
 - Linear Search
@@ -27,6 +30,8 @@ There are several data structures and algorithms implemented in this project. Th
 - Insertion Sort
 - Bubble Sort
 - Comb Sort
+- Cocktail Sort
+- Gnome Sort
 
 ## Usage
 

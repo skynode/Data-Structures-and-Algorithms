@@ -1,8 +1,6 @@
-package main
+package SelectionSort
 
-const arraySize = 10
-
-func SelectionSort(array *[arraySize]int) {
+func SelectionSort(array []int) {
 	for arrayIndex := range array {
 		minValue := array[arrayIndex]
 		minIndex := arrayIndex

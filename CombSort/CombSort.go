@@ -1,8 +1,6 @@
-package main
+package CombSort
 
-const arraySize = 10
-
-func CombSort(array *[arraySize]int) {
+func CombSort(array []int) {
 	gapValue := len(array)
 	swapCount := 1
 	for gapValue >= 1 && swapCount != 0 {

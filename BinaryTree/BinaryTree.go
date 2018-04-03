@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package BinaryTree
 
 type Node struct {
 	data  int
@@ -12,7 +10,7 @@ type BinaryTree struct {
 	root *Node
 }
 
-func (tree *BinaryTree) insertItem(i int) {
+func (tree *BinaryTree) InsertItem(i int) {
 	if tree.root == nil {
 		tree.root = &Node{data: i}
 		return
@@ -35,7 +33,7 @@ func (tree *BinaryTree) insertItem(i int) {
 	}
 }
 
-func (tree *BinaryTree) searchItem(i int) (*Node, bool) {
+func (tree *BinaryTree) SearchItem(i int) (*Node, bool) {
 	if tree.root == nil {
 		return nil, false
 	}
@@ -52,12 +50,12 @@ func (tree *BinaryTree) searchItem(i int) (*Node, bool) {
 	return nil, false
 }
 
-func (tree *BinaryTree) printItems(subtree *Node) {
+func (tree *BinaryTree) GetItems(subtree *Node, callback func(int)) {
 	if subtree.left != nil {
-		tree.printItems(subtree.left)
+		tree.GetItems(subtree.left, callback)
 	}
-	fmt.Println(subtree.data)
+	callback(subtree.data)
 	if subtree.right != nil {
-		tree.printItems(subtree.right)
+		tree.GetItems(subtree.right, callback)
 	}
 }
